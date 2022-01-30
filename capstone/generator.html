@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+	 crossorigin="anonymous">
+	<script src="scripts/script.js">
+
+	</script>
+
+	<h2> Novel Organizer </h2>
+</head>
+
+<body>
+	<div id="nav">
+		<a class="one" href="index.html">Homepage</a>
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">Templates</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="templates/charatemp.html">Character</a>
+    <a href="templates/locatemp.html">Location</a>
+    <a href="templates/plottemp.html">Plotline</a>
+    <a href="templates/themetemp.html">Themes</a>
+    <a href="templates/symboltemp.html">Symbols</a>
+    <a href="templates/motiftemp.html">Motifs</a>
+  </div>
+<a class="one" href="notes.html">Notes</a>
+<a class="one" href="generator.html">Generators</a>
+<a class="one" href="calendar.html">To-Do List</a>
+</div></div>
+
+<center>
+<div class="div1">
+Character Name Generator
+
+
+<p> Select one from the given options:
+        <select id="select1">
+            <option value="ara">Arabic</option>
+            <option value="arm">Armenian</option>
+            <option value="chi">Chinese</option>
+            <option value="eng">English</option>
+            <option value="fre">French</option>
+            <option value="ger">German</option>
+            <option value="jap">Japanese</option>
+            <option value="heb">Hebrew</option>
+            <option value="ind">Indian</option>
+            <option value="ita">Italian</option>
+            <option value="kor">Korean</option>
+            <option value="pun">Punjabi</option>
+            <option value="por">Portugeuse</option>
+            <option value="rus">Russian</option>
+            <option value="sco">Scottish</option>
+            <option value="som">Somalian</option>
+            <option value="spa">Spanish</option>
+            <option value="swa">Swahili</option>
+            <option value="swe">Sweden</option>
+            <option value="tha">Thai</option>
+            <option value="tur">Turkish</option>
+            <option value="xho">Xhosa</option>
+            <option value="vie">Vietnamese</option>
+            <option value="zul">Zulu</option>
+        </select>
+        <select id="select2">
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+            <option value="both">Both</option>
+            <option value="u">Neutral</option>
+        </select>
+    </p>
+ 
+<p> The value of the option selected is:
+        <span class="output"></span>
+    </p>
+ 
+    <button onclick="getOption()"> Get Name </button>
+     
+</div>
+
+</div><br>
+
+<div class="div1">
+Location Name Generator 
+<input id="clickMe" type="button" value="Generate Random Name" onclick="generateName();" />
+  <h2 id="random_name"></h2>
+  
+<div> 
+</center>
+   <script src="scripts/nav.js"></script>
+  </body>
+</html>
